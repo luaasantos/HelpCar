@@ -59,6 +59,7 @@ export function Apresentacao() {
             <Text style={styles.subtitulo}>Precisa de ajuda com o seu veículo? O HelpCar pode te ajudar!</Text>
           </View>
         </View>
+
         <View style={styles.slide}>
           <View style={styles.containerImage}>
             <LinearGradient
@@ -89,6 +90,8 @@ export function Apresentacao() {
         </TouchableOpacity>
       </View>
     </SafeAreaView>
+
+    
   );
 }
 
