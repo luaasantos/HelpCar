@@ -34,6 +34,14 @@ export function Apresentacao() {
     setCurrentIndex(index);
   };
 
+  function eventClick(){
+    console.log("clicou");
+    
+
+
+
+  }
+
   return (
     <SafeAreaView style={styles.container}>
       <Swiper
@@ -78,12 +86,12 @@ export function Apresentacao() {
         </View>
       </Swiper>
       <View style={styles.botaoContainer}>
-        <TouchableOpacity style={styles.buttonApresentacao}>
+        <TouchableOpacity style={styles.buttonApresentacao} onPress={eventClick}>
           <LinearGradient
             colors={['#FF8B38', '#F3664B']}
             style={styles.backgroundButton}
           >
-            <Text style={styles.textButton}>
+            <Text style={styles.textButton} >
               {currentIndex == 0 ? 'PRÓXIMO' : 'COMEÇAR'}
             </Text>
           </LinearGradient>
